@@ -1,0 +1,43 @@
+{
+  "name": "services-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "clevertap-demo-root": "file:..",
+    "clevertap-web-sdk": "github:CleverTap/clevertap-web-sdk#subdomain-issue",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vm-browserify": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "crypto-browserify": "^3.12.1",
+    "react-app-rewired": "^2.2.1",
+    "react-scripts": "^5.0.1",
+    "stream-browserify": "^3.0.0"
+  }
+}

@@ -1,0 +1,143 @@
+/* Add a blue gradient background and a border to the form */
+body {
+  background: linear-gradient(135deg, #e3f0ff 0%, #b3c6ff 100%);
+  min-height: 100vh;
+}
+
+/* Form container */
+.form-container {
+  margin-top: 20px;
+  max-width: 400px;
+  padding: 24px;
+  border-radius: 12px;
+  border: 2px solid #1976d2;
+  background: #eaf3ff;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.10);
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border: 1.5px solid #1976d2;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px 0;
+  background: #1976d2;
+  color: #fff;
+  border: 2px solid #1251a3;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-button:hover {
+  background: #1251a3;
+}
+
+/* CleverTap ID box styles */
+.clevertap-id-box {
+  margin-top: 20px;
+  max-width: 400px;
+  padding: 24px;
+  border-radius: 12px;
+  border: 2px solid #1976d2;
+  background: #eaf3ff;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.10);
+  color: #1251a3;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clevertap-id-icon {
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.clevertap-id-value {
+  word-break: break-all;
+}
+
+/* Reinitialize button styles */
+.reinit-btn {
+  margin-left: auto;
+  background: #fff;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+
+.reinit-btn:hover {
+  background: #1976d2;
+  color: #fff;
+  border-color: #1251a3;
+}
+
+/* Logout container - styled like form-container */
+.logout-container {
+  margin-top: 20px;
+  max-width: 400px;
+  padding: 24px;
+  border-radius: 12px;
+  border: 2px solid #1976d2;
+  background: #eaf3ff;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  box-sizing: border-box;
+  background: #fff;
+  color: #1976d2;
+  border: 2px solid #1976d2;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background: #1976d2;
+  color: #fff;
+  border-color: #1251a3;
+}
