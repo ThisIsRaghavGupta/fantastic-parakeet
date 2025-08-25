@@ -101,6 +101,8 @@ const [clevertapId, setCleverTapId] = useState(getWzrkGId());
 
   return (
     <div style={{ maxWidth: 500, margin: '0 auto' }}>
+      <div className="chetanclass"></div>
+      <div id="bell-selector">🛎️</div>
       {/* Logout container styled like form-container */}
       <div className="logout-container">
         <button className="logout-btn" onClick={handleLogout}>Logout</button>
