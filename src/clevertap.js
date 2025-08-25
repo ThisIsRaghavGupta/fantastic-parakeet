@@ -1,7 +1,7 @@
 import CleverTap from 'clevertap-web-sdk';
 
-const cleverTapAccountId = 'TEST-9WW-764-9K6Z';
-const cleverTapRegion = 'in1'; // e.g., 'us1', 'in1', etc.
+const cleverTapAccountId = '884-5ZW-8Z7Z';
+const cleverTapRegion = 'sk1-staging-4'; // e.g., 'us1', 'in1', etc.
 
 export const initializeCleverTap = () => {
     CleverTap.init(cleverTapAccountId, cleverTapRegion, '', '', { isolateSubdomain: true });
