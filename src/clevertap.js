@@ -4,7 +4,7 @@ const cleverTapAccountId = '884-5ZW-8Z7Z';
 const cleverTapRegion = 'sk1-staging-4'; // e.g., 'us1', 'in1', etc.
 
 export const initializeCleverTap = () => {
-    CleverTap.init(cleverTapAccountId, cleverTapRegion, '', '', { isolateSubdomain: false });
+    CleverTap.init(cleverTapAccountId, cleverTapRegion, '', '', { isolateSubdomain: true });
     // (accountId, region, targetDomain, token, config = { antiFlicker: {}, customId: null, isolateSubdomain: false })
 };
 
