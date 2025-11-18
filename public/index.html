@@ -4,36 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>services-app</title>
-	<script type="text/javascript">
-      var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[], region: 'sk1-staging-4'};
-      // clevertap.account.push({"id": "ZWW-WWW-WW4Z"});
-      clevertap.account.push({"id": "WRK-485-456Z"}); // CM Testing
-      // clevertap.account.push({"id": "WWW-WWW-WWRZ"}); // LOCAL 
-      // clevertap.privacy.push({optOut: false}); 
-      clevertap.privacy.push({useIP: true});
-      (function () {
-          var wzrk = document.createElement('script');
-          wzrk.type = 'text/javascript';
-          wzrk.async = true;
-          // wzrk.src = 'http://localhost:3000/local-file';
-          wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js';
-          // wzrk.src = 'https://static.clevertap.com/staging/builder-staging/js/clevertap.js';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(wzrk, s);
-      })();
-      clevertap.spa = true
-      // clevertap.dismissSpamControl = true
-      setTimeout(() => {
-        clevertap.setLogLevel(3)
-        clevertap.notifications.push()
-      //   clevertap.notifications.push({
-      //     "titleText": 'Wish to receive push notifications?',
-      //     "bodyText": 'Click Yes to receive push notifications',
-      //     "okButtonText": 'Yes',
-      //     "rejectButtonText": 'No',
-      //     "serviceWorkerPath": '/sw.js'});
-      }, 2000)
-    </script>
 </head>
 <body>
     <div id="root"></div>
