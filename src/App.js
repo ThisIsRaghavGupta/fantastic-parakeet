@@ -31,10 +31,16 @@ const getWzrkGId = () => {
 const [clevertapId, setCleverTapId] = useState(getWzrkGId());
 
   useEffect(() => {
+    initializeCleverTap();
     // Example of tracking an event
     console.log('Services App is loading...');
     trackEvent('Services App Loaded', { timestamp: new Date() });
     console.log('CleverTap SDK initialized');
+    // Get CleverTap ID from WZRK_G cookie (with delay)
+    const wzrkGValue = getWzrkGId();
+    setTimeout(() => {
+      setCleverTapId(wzrkGValue);
+    }, 1000);
   }, []);
 
   // Effect to watch for changes in the WZRK_G cookie and update clevertapId
