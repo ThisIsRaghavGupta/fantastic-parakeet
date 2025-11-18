@@ -31,7 +31,6 @@ const getWzrkGId = () => {
 const [clevertapId, setCleverTapId] = useState(getWzrkGId());
 
   useEffect(() => {
-    initializeCleverTap();
     // Example of tracking an event
     console.log('Services App is loading...');
     trackEvent('Services App Loaded', { timestamp: new Date() });
