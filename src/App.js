@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { initializeCleverTap, trackEvent, setUserProfile, onUserLogin, logout } from './clevertap';
-import CleverTap from 'clevertap-web-sdk';
 import './App.css';
 
 const App = () => {
