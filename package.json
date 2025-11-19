@@ -5,7 +5,7 @@
   "dependencies": {
     "buffer": "^6.0.3",
     "clevertap-demo-root": "file:..",
-    "clevertap-web-sdk": "2.3.2",
+    "clevertap-web-sdk": "github:CleverTap/clevertap-web-sdk#sub-domain-issue",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "vm-browserify": "^1.1.2"
