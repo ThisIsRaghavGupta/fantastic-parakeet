@@ -4,6 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>services-app</title>
+    <script type="text/javascript">
+        var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[], region: 'sk1-staging-4'};
+        // clevertap.account.push({"id": "ZWW-WWW-WW4Z"});
+        clevertap.account.push({"id": "884-5ZW-8Z7Z"}); // CM Testing
+        // clevertap.account.push({"id": "WWW-WWW-WWRZ"}); // LOCAL 
+        // clevertap.privacy.push({optOut: false}); 
+        clevertap.privacy.push({useIP: true});
+        console.log('CleverTap SDK initialized 222');
+        // clevertap.config = {domainSpecification: {levelOfIsolation: 2}};
+        (function () {
+            var wzrk = document.createElement('script');
+            wzrk.type = 'text/javascript';
+            wzrk.async = true;
+            // wzrk.src = 'http://localhost:3000/local-file';
+            // wzrk.src = 'https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js';
+            wzrk.src = 'https://static.wizrocket.com/staging/master/js/clevertap.js';
+            // wzrk.src = 'https://static.wizrocket.com/staging/sub-domain-issue/js/clevertap.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wzrk, s);
+        })();
+        clevertap.spa = true
+        // clevertap.dismissSpamControl = true
+        setTimeout(() => {
+            clevertap.setLogLevel(3);
+        }, 2000)
+    </script>
 </head>
 <body>
     <div id="root"></div>
