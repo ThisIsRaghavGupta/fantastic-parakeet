@@ -12,7 +12,6 @@
         // clevertap.privacy.push({optOut: false}); 
         clevertap.privacy.push({useIP: true});
         console.log('CleverTap SDK initialized 222');
-        clevertap.domainSpecification = 3;
         (function () {
             var wzrk = document.createElement('script');
             wzrk.type = 'text/javascript';
@@ -24,6 +23,7 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(wzrk, s);
         })();
+        clevertap.domainSpecification = 3;
         clevertap.spa = true
         // clevertap.dismissSpamControl = true
         setTimeout(() => {
