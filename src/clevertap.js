@@ -1,31 +1,31 @@
-// import CleverTap from 'clevertap-web-sdk';
+import CleverTap from 'clevertap-web-sdk';
 
-// const cleverTapAccountId = 'WRK-485-456Z';
-// const cleverTapRegion = 'sk1-staging-4'; // e.g., 'us1', 'in1', etc.
+const cleverTapAccountId = '468-RZW-ZK6Z';
+const cleverTapRegion = 'sk1-staging-25'; // e.g., 'us1', 'in1', etc.
 
-// export const initializeCleverTap = () => {
-//     CleverTap.init(cleverTapAccountId, cleverTapRegion, '', '', {});
-//     // (accountId, region, targetDomain, token, config = { antiFlicker: {}, customId: null, isolateSubdomain: false })
-// };
+export const initializeCleverTap = () => {
+    CleverTap.init(cleverTapAccountId, cleverTapRegion, '', '', {domainSpecification: 3});
+    // (accountId, region, targetDomain, token, config = { antiFlicker: {}, customId: null, isolateSubdomain: false })
+};
 
-// export const trackEvent = (eventName, eventData) => {
-//     CleverTap.event.push(eventName, eventData);
-// };
+export const trackEvent = (eventName, eventData) => {
+    CleverTap.event.push(eventName, eventData);
+};
 
-// export const setUserProfile = (profileData) => {
-//     CleverTap.profile.push(profileData);
-// };
+export const setUserProfile = (profileData) => {
+    CleverTap.profile.push(profileData);
+};
 
-// export const onUserLogin = (profileData) => {
-//     CleverTap.onUserLogin.push( {Site: profileData});
-// };
+export const onUserLogin = (profileData) => {
+    CleverTap.onUserLogin.push( {Site: profileData});
+};
 
-// export const logout = () => {
-//     CleverTap.logout();
+export const logout = () => {
+    CleverTap.logout();
 
-//     // Clear localStorage
-//     if (typeof localStorage !== 'undefined') {
-//         localStorage.clear();
-//     }
-// };
+    // Clear localStorage
+    if (typeof localStorage !== 'undefined') {
+        localStorage.clear();
+    }
+};
 

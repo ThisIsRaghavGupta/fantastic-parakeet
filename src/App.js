@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { initializeCleverTap, trackEvent, setUserProfile, onUserLogin, logout } from './clevertap';
+import { initializeCleverTap, trackEvent, setUserProfile, onUserLogin, logout } from './clevertap';
 import './App.css';
 
 const App = () => {
@@ -30,10 +30,10 @@ const getWzrkGId = () => {
 const [clevertapId, setCleverTapId] = useState(getWzrkGId());
 
   useEffect(() => {
-    // initializeCleverTap();
+    initializeCleverTap();
     // Example of tracking an event
     console.log('Services App is loading...');
-    // trackEvent('Services App Loaded', { timestamp: new Date() });
+    trackEvent('Services App Loaded', { timestamp: new Date() });
     console.log('CleverTap SDK initialized');
     // Get CleverTap ID from WZRK_G cookie (with delay)
     const wzrkGValue = getWzrkGId();
@@ -53,7 +53,7 @@ const [clevertapId, setCleverTapId] = useState(getWzrkGId());
 
   // Handler for CleverTap logout
   const handleLogout = () => {
-    // logout();
+    logout();
   };
 
   const handleChange = (e) => {
@@ -63,8 +63,8 @@ const [clevertapId, setCleverTapId] = useState(getWzrkGId());
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Setting user profile:', profile);
-    // setUserProfile(profile);
-    // trackEvent('Profile Set', { ...profile, timestamp: new Date() });
+    setUserProfile(profile);
+    trackEvent('Profile Set', { ...profile, timestamp: new Date() });
   };
 
   const handleEventSubmit = (e) => {
@@ -77,7 +77,7 @@ const [clevertapId, setCleverTapId] = useState(getWzrkGId());
       return;
     }
     console.log('Sending event:', eventName, parsedData); // Log event name and data
-    // trackEvent(eventName, parsedData);
+    trackEvent(eventName, parsedData);
     setEventName('');
     setEventData('');
   };
@@ -94,8 +94,8 @@ const [clevertapId, setCleverTapId] = useState(getWzrkGId());
       profileToSend.DOB = new Date(profileToSend.DOB);
     }
     console.log('Logging user profile:', profileToSend);
-    // onUserLogin(profileToSend);
-    // trackEvent('User Login', { ...profileToSend, timestamp: new Date() });
+    onUserLogin(profileToSend);
+    trackEvent('User Login', { ...profileToSend, timestamp: new Date() });
   };
 
   return (
