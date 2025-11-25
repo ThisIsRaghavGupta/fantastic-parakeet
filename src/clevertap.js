@@ -1,6 +1,6 @@
 import CleverTap from 'clevertap-web-sdk';
 
-CleverTap.domainSpecification = 3;
+// CleverTap.domainSpecification = 3;
 
 const cleverTapAccountId = '468-RZW-ZK6Z';
 const cleverTapRegion = 'sk1-staging-25'; // e.g., 'us1', 'in1', etc.
