@@ -1,7 +1,9 @@
 {
   "name": "services-app",
   "version": "1.0.0",
-  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "buffer": "^6.0.3",
     "clevertap-demo-root": "file:..",
