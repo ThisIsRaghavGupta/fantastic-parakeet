@@ -4,6 +4,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisIsRaghavGupta/fantastic-parakeet.git"
+  },
   "dependencies": {
     "buffer": "^6.0.3",
     "clevertap-demo-root": "file:..",
