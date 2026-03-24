@@ -2,10 +2,15 @@ import CleverTap from 'clevertap-web-sdk';
 
 // CleverTap.domainSpecification = 3;
 
-const cleverTapAccountId = '468-RZW-ZK6Z';
-const cleverTapRegion = 'sk1-staging-25'; // e.g., 'us1', 'in1', etc.
+const cleverTapAccountId = '75W-7Z9-7W7Z';
+const cleverTapRegion = 'sk1'; // e.g., 'us1', 'in1', etc.
 
 export const initializeCleverTap = () => {
+    CleverTap.onUserLogin.push({
+        Site: {
+            Identity: 898986435,
+        }
+    })
     CleverTap.init(cleverTapAccountId, cleverTapRegion, '', '', {domainSpecification: 3});
     // (accountId, region, targetDomain, token, config = { antiFlicker: {}, customId: null, isolateSubdomain: false })
 };
